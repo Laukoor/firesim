@@ -107,6 +107,15 @@ class BaseXilinxAlveoU250Config
         new midas.XilinxAlveoU250Config
     )
 
+// Alveo 250 Addons
+class DDR3FRFCFSLLC4MBXilinxAlveoU250Config
+    extends Config(
+      new FRFCFS16GBQuadRankLLC4MB ++
+        new WithWiringTransform ++
+        new WithAsyncResetReplacement ++
+        new midas.XilinxAlveoU250Config
+    )
+
 class BaseXilinxAlveoU280Config
     extends Config(
       new WithDefaultMemModel ++
